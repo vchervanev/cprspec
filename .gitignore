@@ -1,0 +1,5 @@
+vendor
+.history
+.bundle
+pkg
+.rspec_status
