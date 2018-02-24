@@ -8,9 +8,9 @@ CPRSpec expects the following file structure:
 
 * A single `.rb` including RSpec unit tests guarded via `defined? RSpec` inside
 * A set of `*.in.txt` and `*.out.txt` files with test data and expected output inside
-* `CPRSpec.once` call from RSpec scope (to test solution using provided input/output files)
+* `CPRSpec.once` call from RSpec scope (to test solutions using provided input/output files)
 
-During local development `> rspec <problem.rb>` will run its unit tests and custom test suite as
+During local development `$ rspec <problem.rb>` will run its unit tests and custom test suite as
 
 ```bash
 cat <input-file> | ruby <solution-file`
@@ -60,9 +60,9 @@ end
 ```
 
 And then
-``bash
-$ bundle exec rspec test.rb
+> $ bundle exec rspec test.rb
 
+```
 my unit test
   is here
 
