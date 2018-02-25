@@ -18,9 +18,14 @@ cat <input-file> | ruby <solution-file`
 
 and compare produced output vs expected output from `<output-file>`
 
-## Watch mode [not implemented]
+## Watch mode
 
 Executable command `cprspec` listens for changes in `*.rb`, `*.in.txt` and `*.out.txt` files and runs `rspec`.
+If only a data (input/output) file is updated then only that file will be tested.
+
+```bash
+$ [bundle exec] cprspec
+```
 
 ## WHY?
 
