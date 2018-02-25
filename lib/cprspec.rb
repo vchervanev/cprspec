@@ -15,9 +15,9 @@ module CPRSpec
         opts = ''
         if changed.grep(/\.rb$/).empty?
           env = "TESTS=" + changed.map(&File.method(:basename)).map(&Runner::GET_TEST_NAME_PROC).join(',')
-          opts = '-t cprspec_input_tests'
+          opts = '-t cprspec_inut_tests'
         end
-        command = "#{env} rspec *.rb #{opts}"
+        command = "#{env} rspec *.rb -r cprspec -fd -p #{opts}"
         puts "Executing #{command}..."
         system command
       end
